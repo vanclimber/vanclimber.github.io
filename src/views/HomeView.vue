@@ -1,9 +1,18 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
 </script>
 
 <template>
+  
   <main>
-    <TheWelcome />
+    <span class="home">Home</span>
   </main>
 </template>
+
+<style scoped>
+.home {
+  font-size: 50px;
+}
+
+
+
+</style>
