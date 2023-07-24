@@ -51,7 +51,7 @@ const showEngineBar = ref(false);
 
 // 通过jsonp的方式，从百度获取搜索提示
 const getTips = (val: string) => {
-  const sugurl = `http://suggestion.baidu.com/su?wd=${val}&cb=baiduTipsCallBack`;
+  const sugurl = `https://suggestion.baidu.com/su?wd=${val}&cb=baiduTipsCallBack`;
   script = document.createElement("script");
   script.src = sugurl;
   document.getElementsByTagName("head")[0].appendChild(script);
