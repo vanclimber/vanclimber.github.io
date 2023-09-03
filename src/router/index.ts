@@ -11,6 +11,11 @@ const router = createRouter({
       component: HomeView
     },
     {
+      path: '/resume',
+      name: 'resume',
+      component: () => import('@views/resume/index.vue')
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
       component: NotFoundView

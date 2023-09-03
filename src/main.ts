@@ -13,7 +13,11 @@ const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
-app.use(BalmUI); // Mandatory
+app.use(BalmUI, {
+    $theme: {
+        primary: '#018786'
+    }
+}); // Mandatory
 app.use(BalmUIPlus); // Optional
 
 app.mount('#app')
